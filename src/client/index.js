@@ -1,6 +1,14 @@
 import React from "react";
 import { hydrateRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-import Home from "../share/pages/Home";
+import App from "../share/App";
 
-hydrateRoot(document.getElementById("root"), <Home />);
+console.log("客户端渲染");
+
+hydrateRoot(
+  document.getElementById("root"),
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);

@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div onClick={() => console.log("hello")}>
+    <div>
       Home page
-      {/* <Link to="/about">to about page</Link> */}
+      <br />
+      <button onClick={() => alert("hello")}>say hello</button>
+      <br />
+      <Link to="/about">to about page</Link>
+      <br />
+      <a href="/about">to about page </a>
     </div>
   );
 };
